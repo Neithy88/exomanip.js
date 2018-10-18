@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice manipulation DOM</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <h1>Découverte JavaScript : manipulation du DOM groupe 7</h1>
+
+
+    <h2>Exercice 1 :</h2>
+
+    <p>Créer un texte qui s’agrandit au click, puis si on reclick dessus il reprend sa taille d’origine.</p>
+
+    <div id="text">"Hello click ici !"</div>
+
+
+
+    <h2>Exercice 2 :</h2>
+
+
+    <p>Créer 5 boutons et un rectangle bleu de 100px par 100px au centre de la page. Chaque bouton provoque une action
+        sur le rectangle.
+
+        <li>Bouton 1 : augmente la hauteur de 10px, si il dépasse 300px, il remet la hauteur à 100px</li>
+        <li>Bouton 2 : met le rectangle en vert</li>
+        <li>Bouton 3 : remet la couleur initiale</li>
+        <li>Bouton 4 : fait disparaître le rectangle</li>
+        <li>Bouton 5 : fait réapparaître le rectangle</li>
+
+    </p>
+
+    
+
+    <div class="bouton">
+
+
+        <button id="boutontaille"> Bouton 1</button>
+
+
+        <button id="boutonrectvert"> Bouton 2</button>
+
+
+        <button id="boutoncouleurinit"> Bouton 3</button>
+
+
+        <button id="boutondisparait" function="disparait()"> Bouton 4</button>
+
+
+        <button id="boutonapparait"> Bouton 5</button>
+
+
+    </div>
+
+
+    <div id="rectangle"></div>
+
+    <h2>Exercice 3 :</h2>
+
+    
+    <p>Reprendre le rectangle bleu, et lorsqu’on appuie sur la flèche du haut le faire monter de 100px puis reprendre sa place initiale.</p> 
+    <p>ATTENTION : il doit monter et descendre en un appui uniquement.</p>
+
+    
+
+
+
+    <footer>Alexandra Moullet & Thècle-Aurélie AUGUSTIN </footer>
+
+    <script src="style.js"></script>
+
+</body>
+</html>

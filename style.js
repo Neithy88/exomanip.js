@@ -1,6 +1,12 @@
 
 
+
+
+var texte = document.getElementById("text");
+texte.style.fontSize = "20px";
+
 var square = document.getElementById("rectangle");
+
 
 square.style.height="100px";
 square.style.width="100px";
@@ -9,6 +15,7 @@ square.style.backgroundColor="blue";
 square.style.position="relative";
 square.style.top="100px";
 square.style.display="block";
+square.style.marginBottom="50px";
 
 
 var boutontaille = document.getElementById("boutontaille")
@@ -16,7 +23,22 @@ var boutonrectvert = document.getElementById("boutonrectvert")
 var boutoncouleurinit = document.getElementById("boutoncouleurinit")
 var boutondisparait = document.getElementById("boutondisparait")
 var boutonapparait = document.getElementById("boutonapparait")
-var grandis 
+
+
+
+texte.addEventListener("click", function () {
+    console.log(texte.style.fontSize);
+    if (texte.style.fontSize === "20px") {
+        texte.style.fontSize = "30px";
+        console.log(texte.style.fontSize);
+    }
+    else {
+        texte.style.fontSize = "20px";
+        console.log(texte.style.fontSize);
+    }
+});
+
+
 
 
 
@@ -81,8 +103,41 @@ boutonapparait.addEventListener("click", function () {
 });
 
 
+document.addEventListener("keydown", keypress);
+document.addEventListener("keyup", keyclear);
 
- 
+
+
+function keypress(e){
+
+    if (e.keyCode === 38) {
+       square.style.top ="0px";
+        console.log(square.style.Bottom);
+    }
+    
+    
+}
+
+
+function keyclear(e){
+
+    if (e.keyCode === 38) {
+       square.style.top ="100px";
+        console.log(square.style.Bottom);
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
